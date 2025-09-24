@@ -10,83 +10,8 @@ export default function Menu() {
             {/* Home variants 2 & 3 removed */}
 
             <ul className="main-menu__list">
-                <li className="dropdown megamenu">
-                    <Link href="/">Home </Link>
-                    <ul>
-                        <li>
-                            <div className="megamenu-content-box">
-                                <div className="container">
-                                    <div className="megamenu-content-box__inner">
-                                        <div className="row">
-
-                                            {/*Start Home Showcase Item */}
-                                            <div className="col-lg-4">
-                                                <div className="home-showcase__item">
-                                                    <div className="home-showcase__image">
-                                                        <img src="assets/images/home-showcase/home-showcase-1-1.jpg"
-                                                            alt="" />
-                                                        <div className="home-showcase__buttons">
-                                                            <Link href="/"
-                                                                className="btn-one home-showcase__buttons__item top">
-                                                                <span className="txt">Multi
-                                                                    Page</span>
-                                                            </Link>
-                                                            <Link href="/index-one-page"
-                                                                className="btn-one home-showcase__buttons__item">
-                                                                <span className="txt">One
-                                                                    Page</span>
-                                                            </Link>
-                                                        </div>
-                                                    </div>
-                                                    <h3 className="home-showcase__title">
-                                                        Home Page One
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                            {/*End Home Showcase Item */}
-
-                                            {/*Start Home Showcase Item */}
-                                            <div className="col-lg-4">
-                                                <div className="home-showcase__item">
-                                                    <div className="home-showcase__image">
-                                                        <img src="assets/images/home-showcase/home-showcase-1-2.jpg"
-                                                            alt="" />
-                                                        <div className="home-showcase__buttons">
-                                                            {/* Home Page Two removed */}
-                                                        </div>
-                                                    </div>
-                                                    <h3 className="home-showcase__title">
-                                                        Home Page Two
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                            {/*End Home Showcase Item */}
-
-                                            {/*Start Home Showcase Item */}
-                                            <div className="col-lg-4">
-                                                <div className="home-showcase__item">
-                                                    <div className="home-showcase__image">
-                                                        <img src="assets/images/home-showcase/home-showcase-1-3.jpg"
-                                                            alt="" />
-                                                        <div className="home-showcase__buttons">
-                                                            {/* Home Page Three removed */}
-                                                        </div>
-                                                    </div>
-                                                    <h3 className="home-showcase__title">
-                                                        Home Page Three
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                            {/*End Home Showcase Item */}
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </li>
-                    </ul>
+                <li>
+                    <Link href="/">Home</Link>
                 </li>
                 <li className="dropdown">
                     <Link href="#">About</Link>

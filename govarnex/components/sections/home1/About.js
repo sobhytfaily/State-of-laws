@@ -78,12 +78,6 @@ export default function About() {
                                         </div>
                                     </li>
                                 </ul>
-
-                                <div className="about-style1__content-btn">
-                                    <Link className="btn-one" href="/about">
-                                        <span className="txt">Report an Issues</span>
-                                    </Link>
-                                </div>
                             </div>
                         </div>
                     </div>

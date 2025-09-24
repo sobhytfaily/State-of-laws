@@ -9,7 +9,6 @@ import Features from "@/components/sections/index-one-page/Features"
 import Video from "@/components/sections/index-one-page/Video"
 import News from "@/components/sections/index-one-page/News"
 import Events from "@/components/sections/index-one-page/Events"
-import Testimonial from "@/components/sections/index-one-page/Testimonial"
 import Counter from "@/components/sections/index-one-page/Counter"
 export default function Home() {
 

@@ -3,10 +3,9 @@ import About from "@/components/sections/home1/About"
 import Banner from "@/components/sections/home1/Banner"
 import Team from "@/components/sections/home1/Team"
 import Features from "@/components/sections/home1/Features"
-// Services1, Services2, Cta, Video, News removed from main page by request (components remain)
-import Events from "@/components/sections/home1/Events"
-import Testimonial from "@/components/sections/home1/Testimonial"
+    import Events from "@/components/sections/home1/Events"
 import Counter from "@/components/sections/home1/Counter"
+import Video from "@/components/sections/index-one-page/Video"
 export default function Home() {
 
     return (
@@ -15,7 +14,9 @@ export default function Home() {
                 <Banner />
                 <Features />
                 <About />
+                <Counter />                
                 <Events />
+                <Video />
             </Layout>
         </>
     )
