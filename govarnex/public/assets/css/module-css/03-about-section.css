@@ -9,6 +9,7 @@
     background: #ffffff;
     padding: 0px 0 0px;
     z-index: 1;
+    margin-bottom: 100px;
 }
 
 
@@ -208,10 +209,10 @@
 
 .about-style1__img-client-info {
     position: absolute;
-    bottom: 70px;
-    left: -60px;
-    padding-left: 50px;
-    padding-top: 26px;
+    bottom: 10px;
+    left: -50px;
+    padding-left: 65px;
+    padding-top: 40px;
     width: 300px;
     height: 120px;
     background: #FFFFFF;
