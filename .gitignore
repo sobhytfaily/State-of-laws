@@ -1,2 +1,8 @@
+### macOS
+.DS_Store
+govarnex/.DS_Store
+
+# Node
+node_modules/
 govarnex/node_modules/
 govarnex/.next/
