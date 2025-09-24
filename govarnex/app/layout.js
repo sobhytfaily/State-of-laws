@@ -1,6 +1,7 @@
 import "@/node_modules/react-modal-video/css/modal-video.css"
 
 import "public/assets/css/style.css"
+import "public/assets/css/module-css/team-pages.css"
 
 
 import 'swiper/css'

@@ -1,5 +1,4 @@
 'use client'
-import CounterUp from "@/components/elements/CounterUp"
 import Layout from "@/components/layout/Layout"
 import TestimonialSlider03 from "@/components/slider/TestimonialSlider03"
 import Link from "next/link"
@@ -10,7 +9,7 @@ export default function Home() {
     const [isOpen, setOpen] = useState(false)
     return (
         <>
-            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="About Us">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="About Us">
                 <div>
                 {/*Start About Style2 */}
                 <section className="about-style2 about-style2--about">
@@ -104,70 +103,7 @@ export default function Home() {
                 {/* Services section removed per request */}
 
 
-                {/*Start Fact Counter Style3 */}
-                <section className="fact-counter-style3">
-                    <div className="auto-container">
-                        <div className="row">
-                            {/*Start Fact Counter Style3 Single */}
-                            <div className="col-xl-3 col-lg-3 col-md-6 wow slideInUp animated" data-wow-delay="0.1s"
-                                data-wow-duration="1500ms">
-                                <div className="fact-counter-style3__single text-center">
-                                    <div className="counter-box">
-                                        <h2><CounterUp end={4.2} /><span>M</span></h2>
-                                    </div>
-                                    <div className="title">
-                                        <p>Total People Lived <br /> in Our City</p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*End Fact Counter Style3 Single */}
-
-                            {/*Start Fact Counter Style3 Single */}
-                            <div className="col-xl-3 col-lg-3 col-md-6 wow slideInUp animated" data-wow-delay="0.3s"
-                                data-wow-duration="1500ms">
-                                <div className="fact-counter-style3__single text-center">
-                                    <div className="counter-box">
-                                        <h2><CounterUp end={7} /><span>Km2</span></h2>
-                                    </div>
-                                    <div className="title">
-                                        <p>Square Kilometres <br /> Region Covers</p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*End Fact Counter Style3 Single */}
-
-                            {/*Start Fact Counter Style3 Single */}
-                            <div className="col-xl-3 col-lg-3 col-md-6 wow slideInUp animated" data-wow-delay="0.5s"
-                                data-wow-duration="1500ms">
-                                <div className="fact-counter-style3__single text-center">
-                                    <div className="counter-box">
-                                        <h2><CounterUp end={3} /><span>rd</span></h2>
-                                    </div>
-                                    <div className="title">
-                                        <p>Largesty City in our <br /> Country</p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*End Fact Counter Style3 Single */}
-
-                            {/*Start Fact Counter Style3 Single */}
-                            <div className="col-xl-3 col-lg-3 col-md-6 wow slideInUp animated" data-wow-delay="0.7s"
-                                data-wow-duration="1500ms">
-                                <div className="fact-counter-style3__single text-center">
-                                    <div className="counter-box">
-                                    <h2><CounterUp end={20} /><span>%</span></h2>
-                                    </div>
-                                    <div className="title">
-                                        <p>Private & domestic <br /> garden land</p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*End Fact Counter Style3 Single */}
-                        </div>
-                    </div>
-                </section>
-                {/*End Fact Counter Style3 */}
-
+                
                 {/*Start Government Voice */} 
                 <section className="government-voice clearfix">
                     <div className="shape1 rotate-me"><img src="assets/images/shapes/thm-shape1.png" alt="#" /></div>
@@ -250,157 +186,7 @@ export default function Home() {
                     </div>
                     {/*End Government Voice Bottom */}
                 </section>
-                {/*End Government Voice */} 
-
-                {/*Start Team Style1 */}
-                <section className="team-style1">
-                    <div className="auto-container">
-                        <div className="sec-title text-center">
-                            <div className="sub-title">
-                                <h6>Council Members</h6>
-                            </div>
-                            <h2>Meet Excellent Council <br /> Members</h2>
-                        </div>
-                        <div className="row">
-                            {/*Start Team Style1 Single */}
-                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".1s">
-                                <div className="team-style1__single">
-                                    <div className="team-style1__single-img">
-                                        <div className="team-style1__single-img-inner">
-                                            <img src="assets/images/team/team-v1-img1.jpg" alt="#" />
-                                        </div>
-
-                                        <ul className="social-links clearfix">
-                                            <li><Link href="mailto:yourmail@email.com"><span className="icon-mail-1"></span></Link>
-                                            </li>
-                                            <li className="share"><Link href="#"><span className="icon-share"></span></Link>
-                                                <ul className="social-links-inner">
-                                                    <li><Link href="#"><i className="icon-instagram"></i></Link></li>
-                                                    <li><Link href="#"><i className="icon-twitter"></i></Link>
-                                                    </li>
-                                                    <li><Link href="#"><i className="icon-facebook-app-symbol"></i></Link></li>
-                                                </ul>
-                                            </li>
-                                            <li><Link href="tel:1234567890"><span className="icon-telephone"></span></Link></li>
-                                        </ul>
-                                    </div>
-
-                                    <div className="team-stye1__single-content text-center">
-                                        <div className="inner-box">
-                                            <div className="round-bg"></div>
-                                            <h2><Link href="/team-details">Robert Gates</Link></h2>
-                                            <p>Ambassador</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*End Team Style1 Single */}
-
-                            {/*Start Team Style1 Single */}
-                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                                <div className="team-style1__single">
-                                    <div className="team-style1__single-img">
-                                        <div className="team-style1__single-img-inner">
-                                            <img src="assets/images/team/team-v1-img2.jpg" alt="#" />
-                                        </div>
-
-                                        <ul className="social-links clearfix">
-                                            <li><Link href="mailto:yourmail@email.com"><span className="icon-mail-1"></span></Link>
-                                            </li>
-                                            <li className="share"><Link href="#"><span className="icon-share"></span></Link>
-                                                <ul className="social-links-inner">
-                                                    <li><Link href="#"><i className="icon-instagram"></i></Link></li>
-                                                    <li><Link href="#"><i className="icon-twitter"></i></Link>
-                                                    </li>
-                                                    <li><Link href="#"><i className="icon-facebook-app-symbol"></i></Link></li>
-                                                </ul>
-                                            </li>
-                                            <li><Link href="tel:1234567890"><span className="icon-telephone"></span></Link></li>
-                                        </ul>
-                                    </div>
-
-                                    <div className="team-stye1__single-content text-center">
-                                        <div className="inner-box">
-                                            <div className="round-bg"></div>
-                                            <h2><Link href="/team-details">Nicholas Cage</Link></h2>
-                                            <p>Director</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*End Team Style1 Single */}
-
-                            {/*Start Team Style1 Single */}
-                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                                <div className="team-style1__single">
-                                    <div className="team-style1__single-img">
-                                        <div className="team-style1__single-img-inner">
-                                            <img src="assets/images/team/team-v1-img3.jpg" alt="#" />
-                                        </div>
-
-                                        <ul className="social-links clearfix">
-                                            <li><Link href="mailto:yourmail@email.com"><span className="icon-mail-1"></span></Link>
-                                            </li>
-                                            <li className="share"><Link href="#"><span className="icon-share"></span></Link>
-                                                <ul className="social-links-inner">
-                                                    <li><Link href="#"><i className="icon-instagram"></i></Link></li>
-                                                    <li><Link href="#"><i className="icon-twitter"></i></Link>
-                                                    </li>
-                                                    <li><Link href="#"><i className="icon-facebook-app-symbol"></i></Link></li>
-                                                </ul>
-                                            </li>
-                                            <li><Link href="tel:1234567890"><span className="icon-telephone"></span></Link></li>
-                                        </ul>
-                                    </div>
-
-                                    <div className="team-stye1__single-content text-center">
-                                        <div className="inner-box">
-                                            <div className="round-bg"></div>
-                                            <h2><Link href="/team-details">Keanu Reeves</Link></h2>
-                                            <p>Mayor Assistant</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*End Team Style1 Single */}
-
-                            {/*Start Team Style1 Single */}
-                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                <div className="team-style1__single">
-                                    <div className="team-style1__single-img">
-                                        <div className="team-style1__single-img-inner">
-                                            <img src="assets/images/team/team-v1-img4.jpg" alt="#" />
-                                        </div>
-
-                                        <ul className="social-links clearfix">
-                                            <li><Link href="mailto:yourmail@email.com"><span className="icon-mail-1"></span></Link>
-                                            </li>
-                                            <li className="share"><Link href="#"><span className="icon-share"></span></Link>
-                                                <ul className="social-links-inner">
-                                                    <li><Link href="#"><i className="icon-instagram"></i></Link></li>
-                                                    <li><Link href="#"><i className="icon-twitter"></i></Link>
-                                                    </li>
-                                                    <li><Link href="#"><i className="icon-facebook-app-symbol"></i></Link></li>
-                                                </ul>
-                                            </li>
-                                            <li><Link href="tel:1234567890"><span className="icon-telephone"></span></Link></li>
-                                        </ul>
-                                    </div>
-
-                                    <div className="team-stye1__single-content text-center">
-                                        <div className="inner-box">
-                                            <div className="round-bg"></div>
-                                            <h2><Link href="/team-details">Brendan Fraser</Link></h2>
-                                            <p>Council Member</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*End Team Style1 Single */}
-                        </div>
-                    </div>
-                </section>
-                {/*End Team Style1 */}
+                {/*End Government Voice */}
 
                 {/*Start Cta Style1 */}
                 <section className="cta-style1 cta-style1--style2">

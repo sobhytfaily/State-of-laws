@@ -52,8 +52,12 @@ export default function Menu() {
                         <li><Link href="/blog-details">News Details</Link></li>
                     </ul>
                 </li>
-                <li>
-                    <Link href="/team-1">Team</Link>
+                <li className="dropdown">
+                    <Link href="#">Team</Link>
+                    <ul>
+                        <li><Link href="/team-1">Team One</Link></li>
+                        <li><Link href="/team-2">Team Two</Link></li>
+                    </ul>
                 </li>
             </ul>
         </>
