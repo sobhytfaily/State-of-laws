@@ -1,4 +1,4 @@
-import Layout from "@/components/layout/Layout"
+import Layout from "@/components/layout/Lalsyout"
 import About from "@/components/sections/index-one-page/About"
 import Banner from "@/components/sections/index-one-page/Banner"
 import Services1 from "@/components/sections/index-one-page/Services1"
@@ -19,12 +19,8 @@ export default function Home() {
                 <Banner />
                 <Features />
                 <About />
-                <Services1 />
-                <Services2 />
-                <Testimonial />
                 <Counter />
                 <Events />
-                <Video />
                 <Team />
                 <Cta />
                 <News />

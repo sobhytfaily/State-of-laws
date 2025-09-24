@@ -7,10 +7,7 @@ export default function Menu() {
     return (
         <>
 
-            {/* <ul className="sub-menu">
-                <Link className={router.pathname == "/" ? "active" : ""}>Home Default</Link>
-                <Link className={router.pathname == "/index-2" ? "active" : ""}>Home Interior</Link>
-            </ul> */}
+            {/* Home variants 2 & 3 removed */}
 
             <ul className="main-menu__list">
                 <li className="dropdown megamenu">
@@ -55,16 +52,7 @@ export default function Menu() {
                                                         <img src="assets/images/home-showcase/home-showcase-1-2.jpg"
                                                             alt="" />
                                                         <div className="home-showcase__buttons">
-                                                            <Link href="/index-2"
-                                                                className="btn-one home-showcase__buttons__item top">
-                                                                <span className="txt">Multi
-                                                                    Page</span>
-                                                            </Link>
-                                                            <Link href="/index-2-one-page"
-                                                                className="btn-one home-showcase__buttons__item">
-                                                                <span className="txt">One
-                                                                    Page</span>
-                                                            </Link>
+                                                            {/* Home Page Two removed */}
                                                         </div>
                                                     </div>
                                                     <h3 className="home-showcase__title">
@@ -81,16 +69,7 @@ export default function Menu() {
                                                         <img src="assets/images/home-showcase/home-showcase-1-3.jpg"
                                                             alt="" />
                                                         <div className="home-showcase__buttons">
-                                                            <Link href="/index-3"
-                                                                className="btn-one home-showcase__buttons__item top">
-                                                                <span className="txt">Multi
-                                                                    Page</span>
-                                                            </Link>
-                                                            <Link href="/index-3-one-page"
-                                                                className="btn-one home-showcase__buttons__item">
-                                                                <span className="txt">One
-                                                                    Page</span>
-                                                            </Link>
+                                                            {/* Home Page Three removed */}
                                                         </div>
                                                     </div>
                                                     <h3 className="home-showcase__title">

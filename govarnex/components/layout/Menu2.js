@@ -7,10 +7,7 @@ export default function Menu() {
     return (
         <>
 
-            {/* <ul className="sub-menu">
-                <Link className={router.pathname == "/" ? "active" : ""}>Home Default</Link>
-                <Link className={router.pathname == "/index-2" ? "active" : ""}>Home Interior</Link>
-            </ul> */}
+            {/* Home variants 2 & 3 removed */}
 
             <ul className="main-menu__list one-page-scroll-menu">
                 
@@ -24,8 +21,6 @@ export default function Menu() {
                     <Link href="#">Pages</Link>
                     <ul>
                         <li><Link href="/">Home Page 01</Link></li>
-                        <li><Link href="/index-2">Home Page 02</Link></li>
-                        <li><Link href="/index-3">Home Page 03</Link></li>
                     </ul>
                 </li>
             </ul>

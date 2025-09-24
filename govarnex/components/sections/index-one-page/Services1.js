@@ -14,7 +14,7 @@ export default function Services1() {
                 <div className="auto-container">
                     <div className="sec-title text-center">
                         <div className="sub-title">
-                            <h6>EFFICIENCY - OPPORTUNITY</h6>
+                            {/* EFFICIENCY - OPPORTUNITY removed */}
                         </div>
                         <h2>City Municipality Services <br />And Departments</h2>
                     </div>

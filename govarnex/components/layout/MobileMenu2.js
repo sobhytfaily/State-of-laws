@@ -47,8 +47,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                                 <Link href="/#" onClick={handleMobileMenu}>Pages</Link>
                                 <ul style={{ display: `${isActive.key == 7 ? "block" : "none"}` }}>
                                     <li><Link href="/" onClick={handleMobileMenu}>Home Page 01</Link></li>
-                                    <li><Link href="/index-2" onClick={handleMobileMenu}>Home Page 02</Link></li>
-                                    <li><Link href="/index-3" onClick={handleMobileMenu}>Home Page 03</Link></li>
+                                    {/* Home Page 02 & 03 removed */}
                                 </ul>
                                 <div className={isActive.key == 7 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(7)}>
                                     <span className="fa fa-angle-right" />

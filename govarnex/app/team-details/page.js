@@ -6,35 +6,15 @@ export default function Home() {
     return (
         <>
             <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Team Details">
-            {/*Start Team Details */}
-            <section className="team-details">
+                {/* Become Volunteer CTA removed per request */}
+
+                <section className="team-details">
                 {/*Start Team Details Top */}
                 <div className="team-details__top">
                     <div className="auto-container">
                         <div className="row">
-                            <div className="col-xl-5">
-                                <div className="team-details__top-img">
-                                    <div className="shape1 rotate-me"><img src="assets/images/shapes/thm-shape1.png" alt="#" />
-                                    </div>
-                                    <div className="inner">
-                                        <img src="assets/images/team/team-details-img1.jpg" alt="#" />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xl-7">
+                            <div className="col-xl-6">
                                 <div className="team-details__top-content">
-                                    <div className="title">
-                                        <h2>Brendan Fraser</h2>
-                                        <span>Councilor</span>
-                                    </div>
-                                    <div className="text-box">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo sem diam et,
-                                            sollicitudin eget. Tellus velit etiam elit, mi pretium eu. Suspendisse imperdiet
-                                            enim ornare elit, eu vestibulum enim imperdiet viverra. Elementum habitant non
-                                            mi est nec nunc. Orci odio dignissim aliquam dapibus duis. Faucibus velit amet
-                                            vitae sed orc.</p>
-                                    </div>
 
                                     <div className="team-details__top-content-signature">
                                         <img src="assets/images/resources/team-details-signature.png" alt="#" />
@@ -233,12 +213,7 @@ export default function Home() {
                         <div className="col-xl-12">
                             <div className="cta-style1__inner">
                                 <div className="cta-style1__title">
-                                    <div className="sec-title">
-                                        <div className="sub-title">
-                                            <h6>Become Volunteer</h6>
-                                        </div>
-                                        <h2>Become a Volunteer, Service to Our <br /> City, & Make Difference!</h2>
-                                    </div>
+                                            {/* Become Volunteer content removed per request */}
                                 </div>
 
                                 <div className="cta-style1__btn">

@@ -77,18 +77,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                                                                 <div className="home-showcase__image">
                                                                     <img src="assets/images/home-showcase/home-showcase-1-2.jpg"
                                                                         alt="" />
-                                                                    <div className="home-showcase__buttons">
-                                                                        <Link href="/index-2"
-                                                                            className="btn-one home-showcase__buttons__item top">
-                                                                            <span className="txt" onClick={handleMobileMenu}>Multi
-                                                                                Page</span>
-                                                                        </Link>
-                                                                        <Link href="/index-2-one-page"
-                                                                            className="btn-one home-showcase__buttons__item">
-                                                                            <span className="txt" onClick={handleMobileMenu}>One
-                                                                                Page</span>
-                                                                        </Link>
-                                                                    </div>
+                                                                    {/* Home Page Two removed */}
                                                                 </div>
                                                                 <h3 className="home-showcase__title">
                                                                     Home Page Two
@@ -103,18 +92,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                                                                 <div className="home-showcase__image">
                                                                     <img src="assets/images/home-showcase/home-showcase-1-3.jpg"
                                                                         alt="" />
-                                                                    <div className="home-showcase__buttons">
-                                                                        <Link href="/index-3"
-                                                                            className="btn-one home-showcase__buttons__item top">
-                                                                            <span className="txt" onClick={handleMobileMenu}>Multi
-                                                                                Page</span>
-                                                                        </Link>
-                                                                        <Link href="/index-3-one-page"
-                                                                            className="btn-one home-showcase__buttons__item">
-                                                                            <span className="txt" onClick={handleMobileMenu}>One
-                                                                                Page</span>
-                                                                        </Link>
-                                                                    </div>
+                                                                    {/* Home Page Three removed */}
                                                                 </div>
                                                                 <h3 className="home-showcase__title">
                                                                     Home Page Three
