@@ -1,14 +1,55 @@
 "use client"
-import { useState } from 'react'
+
+import { useState } from "react"
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import Team from "@/components/sections/home1/Team"
+
+// Candidate data for pagination (same as before)
+const candidates = [
+    {
+        name: "Robert Gates",
+        role: "Director",
+        image: "assets/images/team/team-v1-img1.jpg",
+        details: "/team-details"
+    },
+    {
+        name: "Nicholas Cage",
+        role: "Director",
+        image: "assets/images/team/team-v1-img2.jpg",
+        details: "/team-details"
+    },
+    {
+        name: "Keanu Reeves",
+        role: "Mayor Assistant",
+        image: "assets/images/team/team-v1-img3.jpg",
+        details: "/team-details"
+    },
+    {
+        name: "Brendan Fraser",
+        role: "Ambassador",
+        image: "assets/images/team/team-v1-img4.jpg",
+        details: "/team-details"
+    },
+    {
+        name: "Mel Gibson",
+        role: "Director",
+        image: "assets/images/team/team-v1-img5.jpg",
+        details: "/team-details"
+    },
+    {
+        name: "Harrison Ford",
+        role: "Assistant",
+        image: "assets/images/team/team-v1-img6.jpg",
+        details: "/team-details"
+    }
+]
 
 export default function TeamTwo() {
-    const items = Array.from({ length: 36 })
-    const perPage = 20
+    const perPage = 4
     const [page, setPage] = useState(1)
-    const totalPages = Math.max(1, Math.ceil(items.length / perPage))
-    const visible = items.slice((page - 1) * perPage, page * perPage)
+    const totalPages = Math.max(1, Math.ceil(candidates.length / perPage))
+    const visible = candidates.slice((page - 1) * perPage, page * perPage)
 
     const renderPagination = () => {
         const pages = []
@@ -34,7 +75,6 @@ export default function TeamTwo() {
                 >
                     ‹
                 </button>
-
                 {pages.map((p, i) => {
                     if (p === 'left-ellipsis' || p === 'right-ellipsis') return <span key={i} className="pagination-ellipsis">…</span>
                     const isActive = p === page
@@ -49,7 +89,6 @@ export default function TeamTwo() {
                         </button>
                     )
                 })}
-
                 <button
                     onClick={() => setPage(Math.min(totalPages, page + 1))}
                     aria-label="Next"
@@ -63,38 +102,59 @@ export default function TeamTwo() {
     }
 
     return (
-        <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Team 2">
+        <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Team Details">
                 <div>
+                    {/* Top map/image placeholder */}
                     <section className="team-top-map team-pages__top">
                         <div className="auto-container">
                             <div className="team-panel">
+                                {/* Map image placeholder - left empty for later */}
                                 <div className="team-map-placeholder">Map / Large Image Placeholder</div>
                             </div>
                         </div>
                     </section>
 
+                    {/* Arabic centered title */}
                     <section className="team-pages__title-section">
                         <div className="auto-container text-center">
                             <h3 className="team-pages__title">المرشحين</h3>
                         </div>
                     </section>
 
-                    <section className="team-grid">
+                    {/* Paginated Team cards using original Team look */}
+                    <section className="team-style1">
                         <div className="auto-container">
-                            <div className="row team-grid-row">
-                                {visible.map((_, idx) => (
-                                    <div key={idx} className="team-card">
-                                        <div className="team-card__image" />
-                                        <div style={{ textAlign: 'center' }}>
-                                            <div className="team-card__role">الوظيفة</div>
-                                            <div className="team-card__name">اسم المرشح</div>
+                            <div className="row">
+                                {visible.map((candidate, idx) => (
+                                    <div key={idx} className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay={`.${idx+1}s`}>
+                                        <div className="team-style1__single">
+                                            <div className="team-style1__single-img">
+                                                <div className="team-style1__single-img-inner">
+                                                    <img src={candidate.image} alt="#" />
+                                                </div>
+                                                <ul className="social-links clearfix">
+                                                    <li><Link href="mailto:yourmail@email.com"><span className="icon-mail-1"></span></Link></li>
+                                                    <li className="share"><Link href="#"><span className="icon-share"></span></Link>
+                                                        <ul className="social-links-inner">
+                                                            <li><Link href="#"><i className="icon-instagram"></i></Link></li>
+                                                            <li><Link href="#"><i className="icon-twitter"></i></Link></li>
+                                                            <li><Link href="#"><i className="icon-facebook-app-symbol"></i></Link></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><Link href="tel:1234567890"><span className="icon-telephone"></span></Link></li>
+                                                </ul>
+                                            </div>
+                                            <div className="team-stye1__single-content text-center">
+                                                <div className="inner-box">
+                                                    <div className="round-bg"></div>
+                                                    <h2><Link href={candidate.details}>{candidate.name}</Link></h2>
+                                                    <p>{candidate.role}</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 ))}
-
                             </div>
-
                             <div className="team-pagination-wrapper">
                                 {renderPagination()}
                             </div>
@@ -102,22 +162,8 @@ export default function TeamTwo() {
                     </section>
                 </div>
             </Layout>
-        </>
-    )
+        )
 }
-
-// import Link from "next/link"
-// export default function Home() {
-
-//     return (
-//         <>
-//             <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Team 2">
-//                 <div>
-//                 {/*Start Team Style2 */}
-//                 <section className="team-style2 team-style2--style3 team-style2--style3--team2">
-//                     <div className="auto-container">
-//                         <div className="sec-title text-center">
-//                                             {/* Become Volunteer content removed per request */}
 //                             {/*Start Team Style2 Single */}
 //                             <div className="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 //                                 <div className="team-style2__single">
@@ -299,6 +345,19 @@ export default function TeamTwo() {
 //                 {/* Become Volunteer CTA removed per request */}
 //                 </div>
 
+//             </Layout>
+//         </>
+//     )
+// }
+// import Team from "@/components/sections/home1/Team";    
+
+// export default function TeamTwo() {
+//     return (
+//         <>
+//             <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Team 2">
+//                 <div>
+//                     <Team />
+//                 </div>
 //             </Layout>
 //         </>
 //     )
