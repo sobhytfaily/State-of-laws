@@ -1,0 +1,135 @@
+/* Departments details specific styles */
+.sidebar-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(36,37,42,0.06);
+  padding: 24px;
+}
+.sidebar-card .card-title,
+.sidebar-card h4,
+.sidebar-card h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.sidebar-card ul.departments-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar-card ul.departments-list li {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.06); /* light border */
+  background: #fff;
+}
+.sidebar-card ul.departments-list li a {
+  color: #222;
+  display: block;
+}
+
+.content-area .hero-img img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+/* small info card */
+.departments-info-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(36,37,42,0.04);
+}
+
+@media (max-width: 768px) {
+  .sidebar-card { margin-bottom: 20px; }
+}
+
+/* Voting Information Card Styles */
+.voting-info-section {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    text-align: right;
+    direction: rtl;
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+.voting-info-image {
+    flex: 0 0 450px;
+}
+
+.voting-info-image img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.voting-info-content {
+    flex: 1;
+}
+
+.voting-info-content h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.voting-info-card h4 {
+    color: #333;
+    font-size: 20px;
+    margin: 30px 0 20px;
+    font-weight: 600;
+}
+
+.voting-info-card p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.participation-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.participation-steps li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.check-icon {
+    color: #e4354f;
+    margin-left: 10px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .voting-info-section {
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .voting-info-image {
+        flex: 0 0 auto;
+        max-width: 100%;
+    }
+    
+    .voting-info-content h3 {
+        font-size: 20px;
+    }
+    
+    .voting-info-content h4 {
+        font-size: 18px;
+        
+    }
+}
