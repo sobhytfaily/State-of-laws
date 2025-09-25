@@ -55,8 +55,8 @@ const mockCandidates = [
 
 export default function TeamTwo() {
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(null);
-    const [candidates, setCandidates] = useState(mockCandidates);
+    const [error, setError] = useState<string | null>(null);
+    const [candidates, setCandidates] = useState<Candidate[]>(mockCandidates);
     const [page, setPage] = useState(1);
     const perPage = 4;
 
