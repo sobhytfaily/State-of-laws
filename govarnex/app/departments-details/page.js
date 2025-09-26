@@ -1,267 +1,95 @@
-import TestimonialSlider05 from "@/components/slider/TestimonialSlider05"
-import Layout from "@/components/layout/Layout"
+import TestimonialSlider05 from "../../components/slider/TestimonialSlider05"
+import Layout from "../../components/layout/Layout"
 import Link from "next/link"
+
 export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Health & Medical Department">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="أين ومتى تصوت">
                 <div>
-                {/*Start Departments Details */}
-                <section className="departments-details">
-                    <div className="auto-container">
-                        <div className="row">
-                            {/*Start Departments Details Sidebar */}
-                            <div className="col-xl-4 col-lg-5">
-                                <div className="departments-details__sidebar">
-                                    <div className="departments-details__sidebar-single">
-                                        <div className="title">
-                                            <h2>All Departments</h2>
-                                        </div>
 
-                                        <ul className="departments-details__sidebar-single-list">
-                                            <li><Link href="#">Government and Election</Link></li>
-                                            <li><Link href="#">Health & Medical Department</Link></li>
-                                            <li><Link href="#">Employment & Job Planning</Link></li>
-                                            <li><Link href="#">Real Estate and Building</Link></li>
-                                            <li><Link href="#">Business Tax and Finance</Link></li>
-                                            <li><Link href="#">Finance & Legal Department</Link></li>
-                                        </ul>
-                                    </div>
-
-                                    <div className="departments-details__sidebar-single contact-info">
-                                        <div className="title">
-                                            <h2>Get In Touch</h2>
-                                        </div>
-                                        <div className="text-box">
-                                            <p>Mauris magna sit elementum elit facilis lacusacphar.</p>
-                                        </div>
-
-                                        <ul className="departments-details__sidebar-single-contact-list">
-                                            <li>
-                                                <div className="icon-box">
-                                                    <span className="icon-telephone"></span>
-                                                </div>
-                                                <div className="text">
-                                                    <p><Link href="tel:913336660021">(+91) 333 666 0021</Link></p>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div className="icon-box">
-                                                    <span className="icon-mail-1"></span>
-                                                </div>
-                                                <div className="text">
-                                                    <p><Link href="mailto:example@stateoflaws.com">example@stateoflaws.com</Link></p>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div className="icon-box">
-                                                    <span className="icon-pin"></span>
-                                                </div>
-                                                <div className="text">
-                                                    <p>New Hyde Park, NY 11040</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-                                </div>
+                    {/* Hero / banner that matches reference image */}
+                    {/* <section className="page-title" style={{backgroundImage: 'url(/assets/images/resources/departments-details-img1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+                        <div className="overlay" style={{background: 'rgba(0,0,0,0.25)', padding: '70px 0'}}>
+                            <div className="auto-container text-center">
+                                <h1 style={{color: '#fff', fontSize: '32px', fontWeight: 600}}>أين ومتى تصوت؟</h1>
                             </div>
-                            {/*End Departments Details Sidebar */}
+                        </div>
+                    </section> */}
 
+                    {/* Breadcrumb
+                    <div className="auto-container" style={{paddingTop: '20px'}}>
+                        <div className="breadcrumb">
+                            <Link href="/">Home</Link> <span> / </span> <span>Health & Medical Department</span>
+                        </div>
+                    </div> */}
 
+                    {/* Main content */}
+                    <section className="departments-details" style={{padding: '40px 0'}}>
+                        <div className="auto-container">
+                            <div className="row align-items-start">
 
-                            {/*Start Departments Details Content */}
-                            <div className="col-xl-8 col-lg-7">
-                                <div className="departments-details__content">
-                                    <div className="departments-details__content-img1">
-                                        <img src="assets/images/resources/departments-details-img1.jpg" alt="#" />
-                                    </div>
-                                    <div className="departments-details__content-text1">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et enim justo, in
-                                            mauris posuere dolor. Dolor felis sapien sit egestas. Ut venenatis faucibus non sed
-                                            faucibus mauris ultricies. Cras varius proin amet vehicula magna. Ultricies gravida
-                                            vel volutpat sed. Platea sed fames at egestas amet feugiat laoreet potenti integer.
-                                            Viverra at maecenas convallis condimentum egestas nunc sagittis eu. Semper faucibus
-                                            facilisis vitae sollicitudin.</p>
-                                    </div>
+                                {/* Left sidebar card */}
+                                <div className="col-xl-4 col-lg-4">
+                                    <aside className="sidebar-card">
+                                            <h4>All Departments</h4>
+                                            <ul className="departments-list">
+                                                <li><Link href="#">أين ومتى تصوت؟</Link></li>
+                                                <li><Link href="#">خدمة الصحة العامة</Link></li>
+                                                <li><Link href="#">روابط مفيدة</Link></li>
+                                            </ul>
+                                        </aside>
+                                </div>
 
-                                    <div className="departments-details__content-text2">
-                                        <p>Fringilla mauris magna sit elementum elit. Facilisi lacus, pharetra quam eu urna
-                                            amet aenean. Nunc mattis vitae tellus bibendum a eu, nunc. Consequat commodo ac
-                                            cursus in donec orci tempus. Massa sed sit faucibus neque ac. Nibh nisl nisl id
-                                            fermentum habitant consequat. A ornare in dis sit cras natoque morbi. Phasellus
-                                            senectus tortor sed magnis. Egestas nunc pellentesque egestas gravida amet.</p>
-                                    </div>
-
-                                    <div className="departments-details__content-text3">
-                                        <div className="row">
-                                            <div className="col-xl-6">
-                                                <div className="content-box">
-                                                    <h2>How We Help People</h2>
-                                                    <p>Mauris magna sit elementum elit. Facilis lacusacphar etra quam eu urna
-                                                        amet
-                                                        aenean Nunc mattis vitae tellus bibendum.</p>
-                                                    <ul>
-                                                        <li>
-                                                            <div className="icon">
-                                                                <span className="icon-check-mark"></span>
-                                                            </div>
-
-                                                            <div className="text">
-                                                                <p>Holiday Trash & Recycling</p>
-                                                            </div>
-                                                        </li>
-
-                                                        <li>
-                                                            <div className="icon">
-                                                                <span className="icon-check-mark"></span>
-                                                            </div>
-
-                                                            <div className="text">
-                                                                <p>Things To Do In State of laws</p>
-                                                            </div>
-                                                        </li>
-
-                                                        <li>
-                                                            <div className="icon">
-                                                                <span className="icon-check-mark"></span>
-                                                            </div>
-
-                                                            <div className="text">
-                                                                <p>Rent a Picnic Shelter</p>
-                                                            </div>
-                                                        </li>
-
-                                                        <li>
-                                                            <div className="icon">
-                                                                <span className="icon-check-mark"></span>
-                                                            </div>
-
-                                                            <div className="text">
-                                                                <p>Contact City Action Center</p>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div className="col-xl-6">
-                                                <div className="img-box">
-                                                    <img src="assets/images/resources/departments-details-img2.jpg" alt="#" />
-                                                </div>
-                                            </div>
+                                {/* Right content area */}
+                                <div className="col-xl-8 col-lg-8">
+                                    <div className="content-area">
+                                        <div className="hero-img" style={{overflow: 'hidden', borderRadius: 12}}>
+                                            <img src="/assets/images/resources/departments-details-img1.jpg" alt="" style={{width: '100%', display: 'block'}} />
                                         </div>
-                                    </div>
 
-                                    <div className="departments-details__content-text4">
-                                        <h2>Cultural Statue</h2>
-                                        <p>Egestas amet feugiat laoreet potenti integer. Viverra at maecenas convallis
-                                            condimentum egestas nunc sagittis eu. Semper faucibus facilisis vitae sollicitudin.
-                                        </p>
-                                    </div>
+                                        <div style={{height: 16}} />
 
-                                    <div className="departments-details__content-text5">
+                                        <p style={{color: '#666', lineHeight: 1.8}}>هذا وصف تجريبي للقسم. يمكنك استبداله بنص حقيقي من المحتوى الإداري المتعلق بالقسم. يتم وضع الفقرات هنا لتتناسب مع تصميم الصفحة المرجع sdklfjaslkjdfksjdlkadfjalskdfja klasdfjlaksj slajl ad jlkfajsdlfkasjd lkfja slkdfj alsk dl jasldj fية.</p>
+
                                         <div className="row">
                                             <div className="col-xl-12">
-                                                <div className="departments-details__content-text5-inner">
-                                                    <TestimonialSlider05/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="departments-details__content-button">
-                                        <div className="title">
-                                            <h2>Download Resources</h2>
-                                        </div>
-                                        <div className="departments-details__content-button-single">
-                                            <div className="left">
-                                                <div className="icon-box">
-                                                    <span className="icon-pdf"></span>
-                                                </div>
-                                                <div className="text-box">
-                                                    <h4>Company Briefing Update for the Year</h4>
-                                                    <p>Pdf(160kb)</p>
-                                                </div>
-                                            </div>
-                                            <div className="right">
-                                                <div className="button-box">
-                                                    <Link href="#">Download</Link>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div className="departments-details__content-button-single">
-                                            <div className="left">
-                                                <div className="icon-box">
-                                                    <span className="icon-pdf"></span>
-                                                </div>
-                                                <div className="text-box">
-                                                    <h4>Cultural Centers and Event schedule</h4>
-                                                    <p>Pdf(160kb)</p>
-                                                </div>
-                                            </div>
-                                            <div className="right">
-                                                <div className="button-box">
-                                                    <Link href="#">Download</Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            {/*End Departments Details Content */}
-                        </div>
-                    </div>
-                </section>
-                {/*End Departments Details */}
-
-                {/*Start Newsletter Style1 */}
-                <section className="newsletter-style1">
-                    <div className="auto-container">
-                        <div className="row">
-                            {/*Start Newsletter Style1 Title */}
-                            <div className="col-xl-4">
-                                <div className="newsletter-style1__title">
-                                    <h2>Subscribe To Our <br/> Newsletter</h2>
-                                </div>
-                            </div>
-                            {/*End Newsletter Style1 Title */}
-
-                            {/*Start Newsletter Style1 Form */}
-                            <div className="col-xl-8">
-                                <div className="newsletter-style1__form">
-                                    <form action="/" className="comment-one__form contact-form-validated">
-                                        <div className="newsletter-style1__form-inner">
-                                            <ul>
-                                                <li>
-                                                    <div className="comment-form__input-box">
-                                                        <input type="text" placeholder="Your name" name="name" />
+                                                <div className="voting-info-section">
+                                                    <div className="voting-info-image">
+                                                        <img src="/assets/images/resources/departments-details-img2.jpg" alt="" />
                                                     </div>
-                                                </li>
-                                                <li>
-                                                    <div className="comment-form__input-box">
-                                                        <input type="email" placeholder="Your email" name="email" />
+                                                    <div className="voting-info-content">
+                                                        <h3>ساعات الاقتراع</h3>
+                                                        <p>تُفتَح مراكز التصويت في جميع المحافظات من الساعة 7:00 صباحاً وحتى 6:00 مساءً في يوم الاقتراع المحدد. احرص على التوجه مبكراً لتفادي الزحام وضمان وقت كافٍ لإكمال العملية الانتخابية.</p>
+                                                        
+                                                        <h4 style={{marginTop: 30, marginBottom: 30}}>خطوات المشاركة الفاعلة</h4>
+                                                        <ul className="participation-steps">
+                                                            <li>
+                                                                <span className="check-icon">✓</span>
+                                                                حضّر بطاقتك البايومترية أو الانتخابية مسبقاً
+                                                            </li>
+                                                            <li>
+                                                                <span className="check-icon">✓</span>
+                                                                تأكد من تفاصيل مركزك قبل يوم الاقتراع
+                                                            </li>
+                                                            <li>
+                                                                <span className="check-icon">✓</span>
+                                                                تذكّر أن مشاركتك ليست مجرد إجراء بل ممارسة لحقك الديمقراطي ومساهمة مباشرة في صناعة مستقبل العراق
+                                                            </li>
+                                                        </ul>
                                                     </div>
-                                                </li>
-                                            </ul>
-                                            <div className="newsletter-style1__form-btn">
-                                                <button type="submit" className="btn-one newsletter-style1__form-btn">
-                                                    <span className="txt">Subscribe Now</span></button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </form>
+
+                                    </div>
                                 </div>
+
                             </div>
-                            {/*End Newsletter Style1 Form */}
                         </div>
-                    </div>
-                </section>
-                {/*End Newsletter Style1 */}
+                    </section>
+
                 </div>
 
             </Layout>
