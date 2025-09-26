@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
-import { fetchCandidates } from "@/app/lib/candidates";
 
 // Mock data with the shape of Candidate interface
 const mockCandidates = [
